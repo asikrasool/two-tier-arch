@@ -59,6 +59,8 @@ There are few resources which are not modularized. ALB and Security groups.
 * `sg.tf` - Create security groups for ec2, rds, alb with specified ingress and egress rules, where one of the rule we create only allow traffic to rds instance from ec2(web_app) security group alone. There are other security group which allow port 22, 80 etc.
 
 ## Instruction
+Before running terraform scripts, make sure you have access to aws account. you can configure your aws account using `aws configure` command and provide `access_key` and `secret_key`.
+
 * `terraform init`: Initialize terraform which will download provider,modules and backend, we use AWS S3 as remote backend to store our statefile remotely.
 * `terraform fmt` : this command used to refactor the code to terraform convention and make is easy to read for everyone
 * `terraform validate`: this command used to validate terraform syntax, dependencies and deprecated warnings and version mismatch etc
