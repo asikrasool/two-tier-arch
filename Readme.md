@@ -65,8 +65,7 @@ There are few resources which are not modularized. ALB and Security groups.
 * `terraform plan`: Always run terrafrom plan to review what resources are going to get created, make sure terraform plan output is align with our expectation.
 * `terraform apply`: it combination of plan and apply command, it will once again provide plan output with approve prompt, if everything looks okay you can approve and terraform will start creating the resources.
 
-* you can use `-target` to create only specific resources, for example
-* To create only compute and vpc module, run
+* you can use `-target` to create only specific resources. For example, to create only compute and vpc module, run
 ```
 terraform apply -target=module.compute -target=module.vpc
 ```
