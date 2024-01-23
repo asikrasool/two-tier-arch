@@ -82,3 +82,4 @@ terraform apply -target=aws_lb_target_group.my_app_eg1 -target=aws_lb.my_app_eg1
 ## Improvement
 * We can also improve this setup, by using ASG along with ASG policy and launch template in `alb.tf resources`.
 * In rds module, we can improve rds database into master slave architecture along with read replica
+* I had mention the environment by folder name with different state file key name, it can be improved by using `terragrunt` with single backend configuration
