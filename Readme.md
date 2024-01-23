@@ -1,6 +1,6 @@
 # Provisioning Two Tier Architecture in AWS Using Terraform.
 This repository contains terraform configuration files to provision multiple EC2 instance backed by ALB, and RDS in private subnet accessible by EC2 instances.
-
+You can click [here](https://github.com/asikrasool/two-tier-arch?tab=readme-ov-file#instruction) to start provision the resources.
 # Terraform Modules and Resources:
 ## VPC 
   * TF module to create a VPC with multiple number of public, private subnets, Internet and NAT gateways
