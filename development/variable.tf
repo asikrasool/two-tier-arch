@@ -16,3 +16,13 @@ variable "ssh_private_key" {
   type        = string
   default     = "./files/id_rsa"
 }
+
+variable "env" {
+  description = "Declare environment name"
+  default     = "development"
+}
+
+variable "project_name" {
+  description = "Declare project name"
+  default     = "cloudbees"
+}

@@ -1,5 +1,5 @@
 module "my_rds" {
-  source = "./tfmodules/myrds"
+  source = "../tfmodules/myrds"
 
   publicly_accessible   = false
   multi_az              = false
