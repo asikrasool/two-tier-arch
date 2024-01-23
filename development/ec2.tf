@@ -20,7 +20,7 @@ resource "null_resource" "null" {
   count = length(module.compute.public_ip)
 
   provisioner "file" {
-    source      = "./files/user_data.sh"
+    source      = "../files/user_data.sh"
     destination = "/home/ec2-user/userdata.sh"
   }
 

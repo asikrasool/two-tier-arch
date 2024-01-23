@@ -14,7 +14,7 @@ variable "instance_type" {
 variable "ssh_private_key" {
   description = "pem file of Keypair we used to login to EC2 instances"
   type        = string
-  default     = "./files/id_rsa"
+  default     = "../files/id_rsa"
 }
 
 variable "env" {
